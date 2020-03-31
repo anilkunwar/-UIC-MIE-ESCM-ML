@@ -108,7 +108,7 @@ The network is tested for each training epoch. The data regarding the performanc
 
 save_performance/test/
 
-in the numpy array r2_all_epochs.npy, which contains the R2 of each step of the test. Extracting this array it is possible to plot the learning curve for the test.
+in the numpy array r2_all_epochs.npy, which contains the R2 of each step of the test. Extracting this array it is possible to plot the learning curve for the test. It should be noted that the metric used to evaluate the performance of the model which is reported in the manuscripatomic_model=get_random_atomic_model(element='Au',random_size=np.random.randint(6,10),cell_size=cell_size)t is the proportion of the correctly predicted heights. The reason behind is that the authors believe that this metric is more informative for the spetroscopic community rather than the R2 score which is a statisitcal parameter with no physical meaning. In addition, the model is based on regression procedure at a pixel level, but the targeted column heights are integer and discrete values, thus it could manuscripatomic_model=get_random_atomic_model be reasonable to calculate the proportion of correct predictions.
 
 
 With the jupyter-notebook:
